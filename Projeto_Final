@@ -1,0 +1,38 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+    Console.WriteLine ("=================" + "VAMOS NESSA!" + "=================");
+
+    string[] perguntas = {
+      "Quantos títulos mundial de F1 tem o Ayrton Senna?",
+      "Quem escreveu o livro 'O Cortiço'?",
+    "Quem tinha olhos 'Oblíquos e dissimulado' de acordo com o principal livro do movimento romântico?"
+    };
+    string[] respostas = {
+      "3",
+      "Aloísio Azevedo", 
+      "Capitu"
+    };
+
+    int pontos = 0;
+
+
+    for(int i = 0; i < perguntas.Length; i++){
+      Console.WriteLine(perguntas[i]);
+      string resposta = Console.ReadLine();
+
+      if(resposta.ToLower() == respostas[i].ToLower()){
+        Console.WriteLine("Resposta correta!");
+        pontos++;
+      }
+      else{
+        Console.WriteLine("Resposta incorreta! A resposta correta é: " + respostas[i]);
+      }
+      
+    }
+    Console.WriteLine("Pontuação final: " + pontos + "/" + perguntas.Length);
+
+    
+  }
+}
