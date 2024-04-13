@@ -1,0 +1,100 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+
+    int [] v = new int [10];
+    Console.WriteLine("Digite o valor v[1]: ");
+    v[1] = int.Parse(Console.ReadLine());
+    if (v[1] == 0){
+      Console.WriteLine(1);
+    }
+    else if (v[1] < 0 ){Console.WriteLine(1);
+      }
+    else{Console.WriteLine(v[1]);
+      }
+    Console.WriteLine("Digite o valor v[2]: "); 
+    v[2] = int.Parse(Console.ReadLine()); 
+    if (v[2] == 0){
+      Console.WriteLine(1);
+    }
+    else if (v[2] < 0 ){
+      Console.WriteLine(1);
+    }
+    else{Console.WriteLine(v[2]); 
+      
+    }
+    Console.WriteLine("Digite o valor v[3]: "); 
+    v[3] = int.Parse(Console.ReadLine());
+    if (v[3] == 0){
+      Console.WriteLine(1); 
+    }
+    else if (v[3] < 0 ){
+      Console.WriteLine(1);
+    }
+    else{Console.WriteLine(v[3]);
+      }
+    Console.WriteLine("Digite o valor v[4]: ");
+    v[4] = int.Parse(Console.ReadLine());
+    if (v[4] == 0){
+      Console.WriteLine(1);
+    }
+    else if (v[4] < 0){
+      Console.WriteLine(1);
+      
+    }
+    else{Console.WriteLine(v[4]);}
+
+    Console.WriteLine( "Digite o valor v[5]: ");
+    v[5] = int.Parse(Console.ReadLine());
+    if (v[5] == 0){
+      Console.WriteLine(1);
+    }
+    else if (v[5] < 0){
+      Console.WriteLine(1);
+    }
+    else{Console.WriteLine(v[5]);}
+
+    Console.WriteLine("Digite o valor v[6]: ");
+    v[6] = int.Parse(Console.ReadLine());
+    if (v[6] == 0){
+      Console.WriteLine(1);
+    }
+    else if(v[6] < 0){
+      Console.WriteLine(1);
+    }
+    else{Console.WriteLine(v[6]);}
+
+    
+    Console.WriteLine("Digite o valor v[7]: ");
+    v[7] = int.Parse(Console.ReadLine());
+    if(v[7] == 0){
+      Console.WriteLine(1);
+    }
+    else if(v[7] < 0){
+      Console.WriteLine(1);
+    }
+    else{Console.WriteLine(v[7]);}
+
+    Console.WriteLine("Digite o valor v[8]: ");
+    v[8] = int.Parse(Console.ReadLine());
+    if(v[8] == 0){
+      Console.WriteLine(1);
+    }
+    else if(v[8] < 0){
+      Console.WriteLine(1);
+    }
+    else{Console.WriteLine(v[8]);}
+
+    Console.WriteLine("Digite o valor v[9]: ");
+    v[9] = int.Parse(Console.ReadLine());
+    if (v[9] == 0){
+      Console.WriteLine(1);
+    }  
+    else if(v[9]<0){
+      Console.WriteLine(1);
+    }
+    else{Console.WriteLine(v[9]);
+      }
+  }
+}
