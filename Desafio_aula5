@@ -1,0 +1,67 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+    int[,] m = new int[12,12];
+    int i;
+    int j;
+    int valor = 1;
+    int total = 0;
+
+    int media = 0;
+
+        for(i=0; i<12; i++){
+          for(j = 0; j<12; j++){
+            m[i,j] = valor;
+            valor++;
+          }
+
+        }
+
+    
+    for(i=0; i<12; i++){
+      for(j = 0; j<12; j++){
+        Console.WriteLine($"m[{i},{j}] = {m[i,j]}");
+
+
+       
+
+        
+      }
+    }
+    
+    
+    
+    Console.WriteLine("Digite o número da linha: ");
+
+    int l = int.Parse(Console.ReadLine());
+
+    Console.WriteLine("Digite S para somar ou M para média: ");
+
+    char c = char.Parse(Console.ReadLine());
+
+    
+
+    if(c == 'S'){
+      for(j=0; j<12; j++){
+        total = total + m[l,j];
+
+        Console.WriteLine("A soma da linha é: " + total);
+         
+      }
+    }
+    else if(c == 'M'){
+      for(j=0; j<12; j++){
+        total = total + m[l,j];
+      }
+      media = total/12;
+
+      Console.WriteLine("A média é: " + media);
+    }
+    else{Console.WriteLine( "Opção inválida");
+      }
+
+    Console.WriteLine("Obrigado");
+
+  }
+}
