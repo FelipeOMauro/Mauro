@@ -1,0 +1,50 @@
+using System;
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World");
+
+        // cod 1 é cachorro quente e custa 4
+        // cod 2 é x salada e custa 4.5
+        // cod 3 é x bacon e custa 5
+        // cod 4 é torrada simples e custa 2
+        // cod 5 é refrigerante e custa 1.5
+
+
+        Console.WriteLine("Olá! Digite o código do seu pedido: ");
+        float pedido = float.Parse(Console.ReadLine());
+
+        Console.WriteLine("Digite a quantidade desejada: ");
+
+        float quantidade = float.Parse(Console.ReadLine());
+
+        if (pedido == 1)
+        {
+            Console.WriteLine("O valor total é R$: " + (quantidade * 4));
+        }
+        else if (pedido == 2)
+        {
+            Console.Write("O valor total é R$: " + (quantidade * 4.5));
+        }
+        else if (pedido == 3)
+        {
+            Console.Write("O valor total é R$: " + (quantidade * 5));
+
+        }
+        else if (pedido == 4)
+        {
+            Console.Write("O valor total é R$: " + (quantidade * 2));
+        }
+        else if (pedido == 5)
+        {
+            Console.Write("O valor total é R$: " + (quantidade * 1.5));
+        }
+
+        else
+        {
+            Console.Write("Código inválido");
+        }
+    }
+}
