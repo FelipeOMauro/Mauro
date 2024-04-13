@@ -1,0 +1,27 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+
+    Console.WriteLine ("Digite um número inteiro entre 0 e 46: ");
+
+    int N = int.Parse(Console.ReadLine());
+
+    if (N < 0 || N > 46) {
+        Console.WriteLine("O valor de N deve estar entre 0 e 46.");
+        return;
+    }
+
+    int a = 0, b = 1;
+    Console.Write(a + " " + b + " ");
+    for (int i = 2; i < N; i++) {
+        int c = a + b;
+        Console.Write(c + " ");
+        a = b;
+        b = c;
+    }
+
+    
+    
+  }
+}
